@@ -1,4 +1,5 @@
 import './App.css';
+import {Homepage} from './Homepage'
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <div className="title">
         <h2>Planets Project</h2>
       </div>
+      <Homepage/>
     </div>
   );
 }

@@ -53,7 +53,7 @@ function Homepage() {
                 }
                 if (data['bodies'][val].id === 'pluton') {
                     const p = data['bodies'][val];
-                    localStorage.setItem("pluton", JSON.stringify(p));
+                    localStorage.setItem("pluto", JSON.stringify(p));
                 }
             }
         })

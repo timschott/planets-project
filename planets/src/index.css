@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+area {
+  position: relative;
+}
+
+area[title]:hover:after {
+  content: attr(title);
+  color: blue;
+  left: 336;
+  top: 552;
+  position: absolute;
+  border-radius: 5px ;
+  background: red;
+}

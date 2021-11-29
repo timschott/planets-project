@@ -74,7 +74,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Mercury Wiki"
-                    title="Mercury Wiki"
+                    title="Mercury is the closest planet to the Sun. Click to learn more!"
                     href="/planets/mercury"
                     coords="336,552,21"
                     shape="circle"

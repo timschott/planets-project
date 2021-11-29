@@ -67,7 +67,7 @@ function Homepage() {
                     target=""
                     alt="Sun Wiki"
                     title="Sun Wiki"
-                    href="/sun"
+                    href="/planets/sun"
                     coords="197,549,91"
                     shape="circle"
                 />
@@ -75,7 +75,7 @@ function Homepage() {
                     target=""
                     alt="Mercury Wiki"
                     title="Mercury Wiki"
-                    href="/mercury"
+                    href="/planets/mercury"
                     coords="336,552,21"
                     shape="circle"
                 />
@@ -83,7 +83,7 @@ function Homepage() {
                     target=""
                     alt="Venus Wiki"
                     title="Venus Wiki"
-                    href="/venus"
+                    href="/planets/venus"
                     coords="413,551,39"
                     shape="circle"
                 />
@@ -91,7 +91,7 @@ function Homepage() {
                     target=""
                     alt="Earth Wiki"
                     title="Earth Wiki"
-                    href="/earth"
+                    href="/planets/earth"
                     coords="519,551,44"
                     shape="circle"
                 />
@@ -99,7 +99,7 @@ function Homepage() {
                     target=""
                     alt="Mars Wiki"
                     title="Mars Wiki"
-                    href="/mars"
+                    href="/planets/mars"
                     coords="623,551,38"
                     shape="circle"
                 />
@@ -107,7 +107,7 @@ function Homepage() {
                     target=""
                     alt="Jupiter Wiki"
                     title="Jupiter Wiki"
-                    href="/jupiter"
+                    href="/planets/jupiter"
                     coords="767,551,83"
                     shape="circle"
                 />
@@ -115,7 +115,7 @@ function Homepage() {
                     target=""
                     alt="Saturn Wiki"
                     title="Saturn Wiki"
-                    href="/saturn"
+                    href="/planets/saturn"
                     coords="951,551,67"
                     shape="circle"
                 />
@@ -123,7 +123,7 @@ function Homepage() {
                     target=""
                     alt="Uranus Wiki"
                     title="Uranus Wiki"
-                    href="/uranus"
+                    href="/planets/uranus"
                     coords="1111,552,49"
                     shape="circle"
                 />
@@ -131,7 +131,7 @@ function Homepage() {
                     target=""
                     alt="Neptune WIki"
                     title="Neptune WIki"
-                    href="/neptune"
+                    href="/planets/neptune"
                     coords="1231,552,45"
                     shape="circle"
                 />
@@ -139,7 +139,7 @@ function Homepage() {
                     target=""
                     alt="Pluto Wiki"
                     title="Pluto Wiki"
-                    href="/pluto"
+                    href="/planets/pluto"
                     coords="1328,550,20"
                     shape="circle"
                 />

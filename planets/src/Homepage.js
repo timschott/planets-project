@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "./Homepage.css";
 
 function Homepage() {
     // call the API in useEffect
@@ -60,8 +61,8 @@ function Homepage() {
     }, []);
 
     return (
-        <div className="homepage_contents">
-            <img src="/solar-system.png" usemap="#image-map" />
+        <div className="homepage_contents" className="homepage">
+            <img src="/solar-system.png" usemap="#image-map" className="image-map" />
             <map name="image-map">
                 <area
                     target=""

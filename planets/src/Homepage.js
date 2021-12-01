@@ -59,7 +59,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Mercury Wiki"
-                    title="Mercury Wiki"
+                    title="Mercury"
                     href="/planets/mercury"
                     coords="336,552,21"
                     shape="circle"
@@ -67,7 +67,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Venus Wiki"
-                    title="Venus Wiki"
+                    title="Venus"
                     href="/planets/venus"
                     coords="413,551,39"
                     shape="circle"
@@ -75,7 +75,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Earth Wiki"
-                    title="Earth Wiki"
+                    title="Earth"
                     href="/planets/earth"
                     coords="519,551,44"
                     shape="circle"
@@ -83,7 +83,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Mars Wiki"
-                    title="Mars Wiki"
+                    title="Mars"
                     href="/planets/mars"
                     coords="623,551,38"
                     shape="circle"
@@ -91,7 +91,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Jupiter Wiki"
-                    title="Jupiter Wiki"
+                    title="Jupiter"
                     href="/planets/jupiter"
                     coords="767,551,83"
                     shape="circle"
@@ -99,7 +99,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Saturn Wiki"
-                    title="Saturn Wiki"
+                    title="Saturn"
                     href="/planets/saturn"
                     coords="951,551,67"
                     shape="circle"
@@ -107,7 +107,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Uranus Wiki"
-                    title="Uranus Wiki"
+                    title="Uranus"
                     href="/planets/uranus"
                     coords="1111,552,49"
                     shape="circle"
@@ -115,7 +115,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Neptune WIki"
-                    title="Neptune WIki"
+                    title="Neptune"
                     href="/planets/neptune"
                     coords="1231,552,45"
                     shape="circle"
@@ -123,7 +123,7 @@ function Homepage() {
                 <area
                     target=""
                     alt="Pluto Wiki"
-                    title="Pluto Wiki"
+                    title="Pluto"
                     href="/planets/pluto"
                     coords="1328,550,20"
                     shape="circle"

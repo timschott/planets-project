@@ -1,5 +1,26 @@
 import {useParams} from "react-router-dom";
 import "./Details.css"
+import earth from './resources/earth.jpg'
+import venus from './resources/venus.jpg'
+import neptune from './resources/neptune.jpg'
+import mars from './resources/mars.jpg'
+import mercury from './resources/mercury.jpg'
+import uranus from './resources/uranus.jpg'
+import pluto from './resources/pluto.jpg'
+import saturn from './resources/saturn.jpg'
+import jupiter from './resources/jupiter.jpg'
+
+const imgKey = {
+    'earth' : earth,
+    'venus' : venus,
+    'neptune' : neptune,
+    'mars' : mars,
+    'mercury' : mercury,
+    'uranus' : uranus,
+    'pluto' : pluto,
+    'saturn' : saturn,
+    'jupiter' : jupiter
+}
 
 const keyLabel = {
     'englishName' : 'name',
@@ -17,7 +38,6 @@ const keyLabel = {
     'sideralOrbit' : 'orbital period',
     'sideralRotation' : 'rotational period',
     'axialTilt' : 'axial tilt',
-    'avgTemp' : 'average temperature',
     'mainAnomaly' : 'mean anomaly',
     'argPeriapsis' : 'argument of periapsis',
     'longAscNose' : 'longitude of ascending nose'
@@ -39,7 +59,6 @@ const units = {
     'sideralOrbit' : 'earth days',
     'sideralRotation' : 'hours',
     'axialTilt' : 'degrees',
-    'avgTemp' : 'K',
     'mainAnomaly' : 'degrees',
     'argPeriapsis' : 'degrees',
     'longAscNose' : 'degrees'
@@ -67,23 +86,7 @@ function Details() {
             {
                 Object.keys(planetData).map((key) => {
                     if ((typeof planetData[key] !== 'object') && (key in keyLabel)) {
-                        var isPlanet_value = null
-                        //display boolean value of isPlanet atrribute
-                        if(key === 'isPlanet'){
-                            if (planetData[key] === true){
-                                isPlanet_value = 'true'
-                            }
-                            else{
-                                isPlanet_value = 'false'
-                            }
-                            return (
-                                <tr>
-                                    <td>{key}</td>
-                                    <td>{isPlanet_value}</td>
-                                </tr>
-                            )
-                        }
-                        return (
+                        return(
                             <tr>
                                 <td className="row-label">{keyLabel[key]}</td>
                                 <td>{planetData[key]}</td>
@@ -91,48 +94,11 @@ function Details() {
                             </tr>
                         )
                     }
-                    if (typeof planetData[key] === 'object'){
-                        if (planetData[key] === null){
-                            return(
-                                <tr>
-                                    <td>{key}</td>
-                                    <td>{planetData[key]}</td>
-                                </tr>
-                            )
-                        }
-                        //'moons' attribute gets a special if-statement
-                        // because it is an array of objects
-                        if (key === 'moons'){
-                            let moon_list = []
-                            for (var i = 0; i < planetData[key].length; i++){
-                                moon_list.push(planetData[key][i]['moon'])
-                            }
-                            return(
-                                <tr>
-                                    <td>{key}</td>
-                                    <td>{
-                                        moon_list.map((name, i) =>
-                                            moon_list[i] + "\n"
-                                        )
-                                    }</td>
-                                </tr>
-                            )
-                        }
-                        else{
-                            var object_vals = Object.keys(planetData[key]).map((key2) => {return (key2)})
-                            return (
-                                object_vals.map((value, i) =>
-                                    <tr>
-                                        <td>{object_vals[i]}</td>
-                                        <td>{planetData[key][object_vals[i]]}</td>
-                                    </tr>
-                                )
-                        )}
-                    }
                 })
             }
         </tbody>
     </table>
+    <img className="planet-image" src={imgKey[planetData['englishName'].toLowerCase()]} />
     </div>
     )
 }

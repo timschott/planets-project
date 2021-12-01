@@ -12,17 +12,9 @@ function Homepage() {
             .then((results) => results.json())
             .then((data) => {
                 for (const val in data["bodies"]) {
-                    // TODO: per planet, add the code to populate the DOM w/ its info
-                    // add something like, planet name, some short description, then a link out to the description page (once that's setup)
-                    // could encapsulate in a table (like HW1)
-                    // or have them all arranged horizontally (in a row)
-                    // possibly add an image/icon per planet as well
                     if (data["bodies"][val].id === "mercure") {
                         const m = data["bodies"][val];
                         localStorage.setItem("mercury", JSON.stringify(m));
-                        // example
-                        // document.getElementById("merc").innerHTML +=
-                        //     m.englishName;
                     }
                     if (data["bodies"][val].id === "venus") {
                         const v = data["bodies"][val];
@@ -64,14 +56,6 @@ function Homepage() {
         <div className="homepage_contents" className="homepage">
             <img src="/solar-system.png" usemap="#image-map" className="image-map" />
             <map name="image-map">
-                <area
-                    target=""
-                    alt="Sun Wiki"
-                    title="Sun Wiki"
-                    href="/planets/sun"
-                    coords="197,549,91"
-                    shape="circle"
-                />
                 <area
                     target=""
                     alt="Mercury Wiki"

@@ -5,6 +5,7 @@ For our project, we created a website for people to explore data and learn more 
 ## Homepage 
 
 The homepage serves as the entry point for the site. On page load, we use the `useEffect` hook to access data from the API we are working with. This API provides a massive response containing information about nearly every “celestial object” you could think of --- not just planets, but also moons, stars, etc. So, we include logic in the `useEffect` call to parse out the information relevant to our site. We persist a payload for each planet into local storage so it can be drawn on by the detail pages.
+
 Besides calling the API, the homepage component constructs an image `<map>.` An image map allows for the use of a background image with defined points of interactivity. In our case, we use a solar system image that displays each of the planets in a row. From there, we add “coordinates” for each of the planets (capturing their position on the page) which makes each planet a clickable aspect of the site. This is how we add navigation to the site in a clever, intuitive fashion; if a user wants to learn more about Jupiter, they simply click and are taken to the details page for that planet. Additionally, hovering over a particular planet displays the data in its `title` attribute. We made sure not to make the sun clickable as our API did not contain data for it.
 
 ## Details

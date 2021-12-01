@@ -63,14 +63,14 @@ function Homepage() {
         <div className="homepage_contents">
             <img src="/solar-system.png" usemap="#image-map" />
             <map name="image-map">
-                <area
+                {/* <area
                     target=""
                     alt="Sun Wiki"
                     title="Sun Wiki"
                     href="/planets/sun"
                     coords="197,549,91"
                     shape="circle"
-                />
+                /> */}
                 <area
                     target=""
                     alt="Mercury Wiki"

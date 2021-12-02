@@ -10,7 +10,9 @@ Besides calling the API, the homepage component constructs an image `<map>.` An 
 
 ## Details
 
-The detail pages displays [... ]
+The details page displays various information of the planet we got from the API. We used `react-router` to enable the multi-page app and each planet has its own path `/planets/:planet-name`. For example, the details page of Mercury can be accessed via `/planets/mecury`. Instead of creating one page for each planet, we made a template `Details` page and pass in the name of the planet as a path parameter to correctly retrieve the information stored in `localStorage`. We then fill the template with the information of that planet.
+
+After parsing the JSON response from the API, we formated the data so that it can be displayed in a table. We also added a photo of the planet below the table.
 
 The UI of the detail pages was designed to be as easy to read as possible. The values returned by the API do not include units, which are a critical component for anyone hoping to find use in our website. To address this, a column was added to specify units. Each row of the table gathered from the API response is filtered through some hard-coded dictionaries that translate API keys to readable keys (i.e. `englishName` -> `name`). The `englishName` property is leveraged to choose an image to display under the table. The breathing background of the details page is implemented purely in CSS. Using some animation techniques, a gradient is varied positionally at some time intervals.
 
